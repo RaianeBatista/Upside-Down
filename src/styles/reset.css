@@ -1,13 +1,16 @@
+/***  FONTS ***/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+@import url('style.css');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 1s;
+  transition:  1s;
+    
 }
-
-/***  FONTS ***/
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 /***  VARIABLES & THEMES ***/
 
@@ -52,6 +55,8 @@
   --character-top-image-color: #000;
   --background-lamp-image: url('../assets/images/backgrounds/lamps-inverted.png');
   --footer-background-color: #000;
+
+ 
 }
 
 .dark-theme button,

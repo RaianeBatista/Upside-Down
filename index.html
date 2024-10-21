@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,13 +10,15 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mundo Invertido</title>
     <link rel="stylesheet" href="./src/styles/style.css" />
+
+    <link rel="shortcut icon" href="./src/assets/images/favicon.png" type="image/x-icon">
   </head>
   <body
-    class="dark-theme"
+    class="light-theme"
     arial-label="O site está utilizando o tema light"
-    role="body"
+ 
   >
     <header aria-label="Cabeçalho da página">
       <!-- <audio
@@ -26,7 +28,7 @@
         aria-details="Audio do site"
       ></audio> -->
       <audio
-        id="music"
+        id="music" 
         src="./src/assets/musics/normal-world.mpeg"
         aria-details="Audio do site"
       ></audio>
@@ -44,7 +46,7 @@
           Vecna. Você está preparado? Então clique no botão abaixo para entrar
           no Mundo Invertido!
         </p>
-        <button id="switch-theme-button" onclick='switchTheme()'>
+        <button id="switch-theme-button" onclick="switchTheme()">
           Inverter Mundos
         </button>
       </div>
@@ -171,7 +173,7 @@
       <img src="./src/assets/images/footer/logo.svg" alt="Logotipo DIO" />
     </footer>
 
-    <script defer>
+    <script>
       function switchTheme() {
         document.body.classList.toggle('dark-theme');
         document.body.classList.toggle('light-theme');

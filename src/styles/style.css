@@ -1,12 +1,13 @@
 @import url('reset.css');
-*{
-  transition: 1s;
-}
+/***  FONTS ***/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 h1,
 h2,
 h3 {
   font-family: var(--featured-font-family);
- 
+
   font-size: 3rem;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -33,7 +34,7 @@ button {
   font-size: 1.25rem;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.7s;
+  transition: background .5s;
 }
 
 input,
@@ -76,8 +77,8 @@ header::before {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 90%;
-  filter: saturate(0);
-  opacity: 0.2;
+  filter: saturate(0.5);
+  opacity: 0.5;
 }
 
 .header-content {
@@ -100,6 +101,7 @@ header::before {
 .header-content button {
   border: 3px solid var(--primary-color);
   color: var(--primary-color);
+
 }
 
 .header-content button:hover {
@@ -121,11 +123,10 @@ header::before {
 
   mask: var(--character-top-image-src) bottom / 100% no-repeat;
   -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
-    
 }
 
 .world-characters#bottom-characters {
-
+  transition: 1s;
   height: 500px;
   background-color: var(--character-bottom-image-color);
   top: 3px;
@@ -338,11 +339,11 @@ footer::after {
   bottom: -30px;
 }
 
-footer::before{
+footer::before {
   left: -50px;
   transform: rotateZ(-10deg);
 }
-footer::after{
+footer::after {
   right: -50px;
   transform: rotateZ(10deg);
 }
